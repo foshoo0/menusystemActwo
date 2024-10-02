@@ -9,12 +9,12 @@ if(isset($_GET['sbmt'])) {
 	$fries = 75;
 	$steak = 150;
 
-	// Fetch order and quantity from GET request
+	
   	$order = $_GET['order']; 
 	$quantity = $_GET['quantity']; 
 	$money = $_GET['cash']; 
 
-	// Switch to determine the price based on the order
+	
 	switch ($order) {
 		case 'Burger':
 			$item_price = $burger;
@@ -30,16 +30,16 @@ if(isset($_GET['sbmt'])) {
 			break;
 	}
 
-	// Calculate total price
+	// total price
 	$total_price = $item_price * $quantity;
 
-	// Calculate change
+	// change
 	$change = $money - $total_price;
 
-	// Get current date and time
+	// current date and time
 	$current_date = date("m/d/Y h:i:s a");
 
-	// Display the receipt with styling
+	// Display the receipt
 	echo "<div style='text-align:center; font-family: Arial;'>";
 	echo "<h1>RECEIPT</h1>";
 	echo "<h2>Total Price: " . $total_price . " PHP</h2>";
