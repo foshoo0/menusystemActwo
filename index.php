@@ -27,7 +27,7 @@
         </tr>
     </table>
 
-    <form method="GET" action="handleform2.php">
+    <form method="GET" action="handleform.php">
         <label for="order">Select an order</label>
         <select name="order" id="order">
             <option value="Burger">Burger</option>
